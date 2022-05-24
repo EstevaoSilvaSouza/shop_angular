@@ -1,0 +1,64 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  background-color: #000;
+  left: 0;
+  width: 100%;
+  z-index: 999px;
+  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: sticky;
+  top: 0;
+}
+
+.Header ul {
+  list-style-type: none;
+  margin-right: 10%;
+}
+
+.Header a {
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 1.2em;
+  color: #ff6500;
+  font-style: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.Header a:hover {
+  color: #fff;
+  font-size: 1.31em;
+}
+
+.Header h1 {
+  margin-left: 11%;
+  color: #ff6500;
+  transition: all 0.2s ease-in-out;
+}
+.Header h1:hover {
+  margin-left: 11%;
+  color: #fff;
+}
+
+.busca {
+  height: 40px;
+  width: 200px;
+  border-radius: 100px 100px;
+  text-align: center;
+  color: #000;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.busca:hover {
+  width: 250px;
+  color: #ff6500;
+}
+@media screen and (max-width: 800px) {
+  .Header {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

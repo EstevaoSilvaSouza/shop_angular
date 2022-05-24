@@ -1,0 +1,17 @@
+<div class="title">
+  <h1>MEGA QUEIMA</h1>
+</div>
+
+<div class="card" *ngIf="listproducts" (click)="teste(this)">
+  <div class="produtos" *ngFor="let product of listproducts">
+    <a class="link" routerLink="produto/{{ product.id }}">
+      <img class="imgg" src="{{ product.image }}" alt="{{ product.name }}" />
+      <h3>Produto: {{ product.name }}</h3>
+      <p>Tipo: {{ product.type }}</p>
+      <p>Descrição: {{ product.description }}</p>
+      <p class="valor">Valor R$:{{ product.price }}</p>
+      <p>Tempo: {{ time }}</p>
+      <button class="btnCompra">Comprar</button>
+    </a>
+  </div>
+</div>

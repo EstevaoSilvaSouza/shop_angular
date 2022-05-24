@@ -1,0 +1,80 @@
+.title {
+  text-align: center;
+  color: #fff;
+  padding: 26px;
+  background-color: #ff6500;
+  width: 80%;
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+  outline: 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.produtos {
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 520px;
+  background-color: rgba(112, 109, 109, 0.158);
+  color: #000;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btnCompra {
+  margin-top: 40px;
+  width: 190px;
+  height: 45px;
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+
+.btnCompra:hover {
+  margin-top: 40px;
+  width: 190px;
+  height: 45px;
+  background-color: #000;
+  color: #ff6500;
+  cursor: pointer;
+}
+
+.valor {
+  font-size: 30px;
+  color: #ff6500;
+}
+
+.produtos:hover {
+  box-shadow: 10px 15px #000;
+}
+
+.produtos h3 {
+  margin-top: 35px;
+}
+.produtos p {
+  margin-top: 8px;
+}
+
+.imgg {
+  margin-top: 10px;
+  width: 250px;
+  height: 200px;
+}
+
+/* Melhorar a responsividade da pagina!! */
+@media screen and (max-width: 800px) {
+  .card {
+    width: 400px;
+  }
+}
